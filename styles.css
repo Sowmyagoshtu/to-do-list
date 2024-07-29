@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right:20px;
+    position: relative;
+}
+
+#search-icon {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+#search-icon:hover {
+    background-color: #218838;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 0;
+    z-index: 1;
+    width: calc(100% - 60px);
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+
+#todo-list li {
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#todo-list li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+#todo-list li .edit-button {
+    background-color: #ffc107;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 55px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    float: right;
+}
+
+#todo-list li .edit-button:hover {
+    background-color: #e0a800;
+}
+
+#todo-list li .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#todo-list li .delete-button:hover {
+    color: #bd1425;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #555;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: opacity 0.3s;
+}
+
